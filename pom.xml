@@ -4,7 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <parent>
+        <groupId>org.scijava</groupId>
+        <artifactId>pom-scijava</artifactId>
+        <version>28.0.0</version>
+        <relativePath />
+    </parent>
+
+    <groupId>net.imagej</groupId>
     <artifactId>imagej-onnx</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -12,5 +19,20 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <name>ImageJ-ONNX</name>
+    <description>ImageJ/ONNX integration.</description>
+    <url>https://github.com/imagej/imagej-onnx</url>
+    <inceptionYear>2017</inceptionYear>
+    <organization>
+        <name>ImageJ</name>
+        <url>https://imagej.net/</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Simplified BSD License</name>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
 </project>
